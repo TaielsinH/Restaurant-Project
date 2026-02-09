@@ -1012,11 +1012,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Documents\\Restaurant\\RestaurantApi\\Restaurant.Tests\\Restaurant.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\User\\source\\Proyecto-Software\\RestaurantApi\\Restaurant.Tests\\Restaurant.Tests.csproj",
       "projectName": "Restaurant.Tests",
-      "projectPath": "C:\\Users\\User\\Documents\\Restaurant\\RestaurantApi\\Restaurant.Tests\\Restaurant.Tests.csproj",
+      "projectPath": "C:\\Users\\User\\source\\Proyecto-Software\\RestaurantApi\\Restaurant.Tests\\Restaurant.Tests.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Documents\\Restaurant\\RestaurantApi\\Restaurant.Tests\\obj\\",
+      "outputPath": "C:\\Users\\User\\source\\Proyecto-Software\\RestaurantApi\\Restaurant.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1031,14 +1031,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\User\\Documents\\Restaurant\\RestaurantApi\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\User\\Documents\\Restaurant\\RestaurantApi\\Application\\Application.csproj"
+            "C:\\Users\\User\\source\\Proyecto-Software\\RestaurantApi\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\User\\source\\Proyecto-Software\\RestaurantApi\\Application\\Application.csproj"
             }
           }
         }
@@ -1053,7 +1054,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net9.0": {
@@ -1092,7 +1093,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
