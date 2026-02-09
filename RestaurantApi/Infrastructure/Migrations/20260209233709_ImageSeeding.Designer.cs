@@ -4,6 +4,7 @@ using Infrastructure.Persistency;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260209233709_ImageSeeding")]
+    partial class ImageSeeding
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -284,7 +287,7 @@ namespace Infrastructure.Migrations
                             Category = 3,
                             CreateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Description = "Suprema de pollo con salsa de choclo, banana frita y papas pay.",
-                            ImageUrl = "https://www.clarin.com/img/2024/08/09/SQrN6GsGV_1256x620__3.jpg#1742234090144",
+                            ImageUrl = "url_maryland",
                             Name = "Suprema Maryland",
                             Price = 12000.00m,
                             UpdateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc)
@@ -296,7 +299,7 @@ namespace Infrastructure.Migrations
                             Category = 4,
                             CreateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Description = "Sorrentinos caseros rellenos de jamón cocido y muzzarella con salsa a elección (Fileto, Crema o Mixta).",
-                            ImageUrl = "https://imag.bonviveur.com/sorrentinos-rellenos-de-jamon-y-queso-con-salsa-marinara_1000.webp",
+                            ImageUrl = "url_sorrentinos",
                             Name = "Sorrentinos de Jamón y Queso",
                             Price = 9500.00m,
                             UpdateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc)
@@ -308,7 +311,7 @@ namespace Infrastructure.Migrations
                             Category = 4,
                             CreateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Description = "Los clásicos del 29. Ñoquis de papa servidos con estofado de carne.",
-                            ImageUrl = "https://cocinalocal.cl/wp-content/uploads/2022/11/Noquis-de-papa-italianos.jpeg",
+                            ImageUrl = "url_noquis",
                             Name = "Ñoquis de Papa Caseros",
                             Price = 8900.00m,
                             UpdateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc)
@@ -320,7 +323,7 @@ namespace Infrastructure.Migrations
                             Category = 5,
                             CreateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Description = "Costillar de ternera cortado transversalmente, asado a fuego lento. Incluye guarnición.",
-                            ImageUrl = "https://www.clarin.com/img/2022/03/07/0w2kcAVNO_360x240__1.jpg",
+                            ImageUrl = "url_asado",
                             Name = "Asado de Tira",
                             Price = 14500.00m,
                             UpdateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc)
@@ -332,7 +335,7 @@ namespace Infrastructure.Migrations
                             Category = 5,
                             CreateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Description = "Corte ancho y jugoso de bife de chorizo, punto a elección.",
-                            ImageUrl = "https://media.elgourmet.com/recetas/cover/bife-_UPgMoHqWDK4R60cwJ8hZVk2izxe71l.png",
+                            ImageUrl = "url_bife_chorizo",
                             Name = "Bife de Chorizo (400g)",
                             Price = 16000.00m,
                             UpdateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc)
@@ -344,7 +347,7 @@ namespace Infrastructure.Migrations
                             Category = 5,
                             CreateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Description = "Matambre de ternera tierno con salsa de tomate y queso muzzarella, finalizado a la parrilla.",
-                            ImageUrl = "https://www.clarin.com/img/2022/11/25/tR-l3EmRl_1256x620__2.jpg#1669400323977",
+                            ImageUrl = "url_matambre",
                             Name = "Matambre a la Pizza",
                             Price = 15500.00m,
                             UpdateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc)
@@ -356,7 +359,7 @@ namespace Infrastructure.Migrations
                             Category = 6,
                             CreateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Description = "Salsa de tomate casera, abundante muzzarella, orégano y aceitunas verdes.",
-                            ImageUrl = "https://www.laespanolaaceites.com/wp-content/uploads/2019/06/pizza-con-tomate-albahaca-y-mozzarella-1080x671.jpg",
+                            ImageUrl = "url_pizza_muzza",
                             Name = "Pizza Muzzarella Grande",
                             Price = 8000.00m,
                             UpdateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc)
@@ -368,7 +371,7 @@ namespace Infrastructure.Migrations
                             Category = 6,
                             CreateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Description = "Muzzarella, jamón cocido natural y tiras de morrones asados.",
-                            ImageUrl = "https://www.clarin.com/img/2021/11/16/YcExTBfAe_360x240__1.jpg",
+                            ImageUrl = "url_pizza_especial",
                             Name = "Pizza Especial con Jamón y Morrones",
                             Price = 9500.00m,
                             UpdateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc)
@@ -380,7 +383,7 @@ namespace Infrastructure.Migrations
                             Category = 7,
                             CreateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Description = "Lomo de ternera en pan francés con lechuga, tomate, jamón, queso y huevo frito. Sale con papas.",
-                            ImageUrl = "https://www.clarin.com/img/2021/07/26/u-aUfp64d_360x240__1.jpg",
+                            ImageUrl = "url_lomito",
                             Name = "Lomito Completo",
                             Price = 10500.00m,
                             UpdateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc)
@@ -392,7 +395,7 @@ namespace Infrastructure.Migrations
                             Category = 7,
                             CreateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Description = "Doble medallón de carne (240g), doble cheddar, panceta crocante y cebolla caramelizada.",
-                            ImageUrl = "https://stordfkenticomedia.blob.core.windows.net/df-us/rms/media/recipemediafiles/recipe%20images%20and%20files/retail/desktop%20(600x600)/2023.nov/2023_retail_double-stack-cheeseburger_600x600.jpg?ext=.jpg",
+                            ImageUrl = "url_hamburguesa",
                             Name = "Hamburguesa Doble Cheddar",
                             Price = 9800.00m,
                             UpdateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc)
@@ -404,7 +407,7 @@ namespace Infrastructure.Migrations
                             Category = 8,
                             CreateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Description = "Línea Coca-Cola o Pepsi según disponibilidad.",
-                            ImageUrl = "https://jumboargentina.vtexassets.com/arquivos/ids/782824-800-600?v=638206689771200000&width=800&height=600&aspect=true",
+                            ImageUrl = "url_gaseosa",
                             Name = "Gaseosa Cola 500ml",
                             Price = 2500.00m,
                             UpdateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc)
@@ -416,7 +419,7 @@ namespace Infrastructure.Migrations
                             Category = 8,
                             CreateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Description = "Villavicencio o Eco de los Andes.",
-                            ImageUrl = "https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/3040341_f.jpg",
+                            ImageUrl = "url_agua",
                             Name = "Agua Mineral sin Gas 500ml",
                             Price = 2200.00m,
                             UpdateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc)
@@ -428,7 +431,7 @@ namespace Infrastructure.Migrations
                             Category = 9,
                             CreateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Description = "Cerveza Indian Pale Ale, amargor intenso y notas cítricas.",
-                            ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/3/32/Fuller%27s_India_pale_ale.jpg",
+                            ImageUrl = "url_ipa",
                             Name = "Pinta IPA",
                             Price = 4500.00m,
                             UpdateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc)
@@ -440,7 +443,7 @@ namespace Infrastructure.Migrations
                             Category = 9,
                             CreateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Description = "Cerveza rubia suave con un toque de miel.",
-                            ImageUrl = "https://cheverry.com.ar/wp-content/uploads/2020/07/okeoke1-5a2cab20b894ce672315277681133744-1024-1024.png",
+                            ImageUrl = "url_honey",
                             Name = "Pinta Honey",
                             Price = 4500.00m,
                             UpdateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc)
@@ -452,7 +455,7 @@ namespace Infrastructure.Migrations
                             Category = 10,
                             CreateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Description = "Flan de huevo tradicional acompañado de dulce de leche y crema chantilly.",
-                            ImageUrl = "https://www.infobae.com/resizer/v2/AR65PTXNQVEAVLYJPDI4LHMHY4.png?auth=2233aa8ae743a1e4dce47a982f5d0ceb147b2f309d8b0f6cb71e76d639b40f08&smart=true&width=1024&height=512&quality=85",
+                            ImageUrl = "url_flan",
                             Name = "Flan Casero Mixto",
                             Price = 4200.00m,
                             UpdateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc)
@@ -464,7 +467,7 @@ namespace Infrastructure.Migrations
                             Category = 10,
                             CreateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Description = "Panqueque tibio relleno con abundante dulce de leche repostero.",
-                            ImageUrl = "https://www.clarin.com/img/2023/04/20/FH-fEx20c_1256x620__2.jpg",
+                            ImageUrl = "url_panqueque",
                             Name = "Panqueque de Dulce de Leche",
                             Price = 4000.00m,
                             UpdateDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc)
